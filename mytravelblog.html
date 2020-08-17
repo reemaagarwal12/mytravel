@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> My Travel Blog </title>
+</head>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+<body>
+	 <script type="text/javascript"> 
+var name = prompt("Please enter your name");
+var msg;  
+    var date = new Date();  
+    var hour = date.getHours();  
+    var minute = date.getMinutes();  
+    var second = date.getSeconds();  
+    if (minute < 10) {  
+      minute = "0" + minute;  
+    }  
+    if (second < 10) {  
+      second = "0" + second;  
+    }  
+    if (hour < 12) {  
+      msg = ", Good morning, ";  
+    } else if (hour < 17) {  
+      msg = ", Good afternoon, ";  
+    } else {  
+      msg = ", Good evening, ";  
+    }  
+    alert(name + msg + "Checkout my travel blog");  
+    
+
+        var myDate = new Date(); 
+        var myDay = myDate.getDay(); 
+        
+        // Array of days. 
+        var weekday = ['Sunday', 'Monday', 'Tuesday', 
+            'Wednesday', 'Thursday', 'Friday', 'Saturday' 
+        ]; 
+        document.write("<b>Today is : " + weekday[myDay]); 
+        document.write("<br/>"); 
+        
+        // get hour value. 
+        var hours = myDate.getHours(); 
+        var ampm = hours >= 12 ? 'PM' : 'AM'; 
+        hours = hours % 12; 
+        hours = hours ? hours : 12; 
+        var minutes = myDate.getMinutes(); 
+        minutes = minutes < 10 ? '0' + minutes : minutes; 
+        var myTime = hours + " " + ampm + " : " + minutes +  
+            " : " + myDate.getSeconds(); 
+        document.write("\tCurrent time is : " + myTime);        
+    </script>
+</b>
+</body>
+    <br> 
+    <br>
+	<nav> <b>
+  <a href="contact.html">Contact</a>
+  <a href="blog.html">Blog</a>
+ <a href="mytravelblog.html">Home</a>
+  <a style="float:left">MY TRAVEL BLOG</a>
+  </b>
+
+</nav>
+<div class="banner-image">
+  <div class="banner-text">
+    <h1 style="font-size:50px">NEPAL</h1>
+  </div>
+</div>
+
+<section id="desc1">
+Nepal, is one such country where I have visited many times and still not tired because It is the most beautiful and mesmerizing country. The varieties of creatures, plants and animals it has makes it more beautiful. Mount Everest, the highest peak of the world is located there. Moreover 8 out of 12 highest peaks of the world are in Nepal. It is second richest country in terms of water after Brazil. In Nepal itself I have visited many places, such as: <br> <span id="places"> Chitwan, Lumbini, Manakamana, Pokhara, Muktinath and Kathmandu. </span> Nepalese culture and People both are amazing. There are varieties of caste their having different languages but Nepali is the national language of the country. Visiting Nepal was one of the most amazing moment for me and my family since the weather of Nepal is moderate entire year making our travel smooth and more fun. </section>
+<iframe width="580" height="430" src="https://www.youtube.com/embed/UGPxfizP1aI" style="float:right;margin-top:-450px;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</body>

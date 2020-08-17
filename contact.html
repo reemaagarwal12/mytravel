@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+  <script>
+    function validate(){
+    x=document.myForm
+    input=x.phno.value
+    if (input.length>10){
+        alert("The field cannot contain more than 10 characters!")
+        return false
+    }else {
+        return true
+    }
+}
+  </script>
+  <nav> <b>
+  <a href="contact.html">Contact</a>
+  <a href="blog.html">Blog</a>
+ 
+   <a href="mytravelblog.html">Home</a>
+  <a style="float:left">MY TRAVEL BLOG</a>
+  </b>
+</nav>
+<header>
+  <h2 class="f2"> CONTACT US </h2>
+</header>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2 class="f1">FORM</h2>
+    <fieldset>
+  <form name="myForm" onsubmit="return validate()">
+  <div class="a2">
+    <div class="a3">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="a4">
+      <input type="text" id="fname" name="firstname" placeholder="Name..">
+    </div>
+  </div>
+  <div class="a2">
+    <div class="a3">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="a4">
+      <input type="text" id="lname" name="lastname" placeholder="Last name..">
+    </div>
+  </div>
+  <div class="a2">
+    <div class="a3">
+      <label for="phno">Phone No</label>
+    </div>
+    <div class="a4">
+      <input type="tel" id="phno" name="phno" placeholder="Phone number..">
+    </div>
+  </div>
+  <div class="a2">
+    <div class="a3">
+      <label for="country">Country</label>
+    </div>
+    <div class="a4">
+      <select id="country" name="country">
+        <option value="australia">India</option>
+        <option value="canada">Nepal</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+  </div>
+  <div class="a2">
+    <div class="a3">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="a4">
+      <textarea id="subject" name="subject" style="height:100px"></textarea>
+    </div>
+  </div>
+  <div class="a2">
+    <input type="submit" value="Submit">
+  </div>
+
+  </form>
+</div>
+  
+  </div>
+</fieldset>
+  <div class="column" style="background-color:#bbb;">
+    <h2 class="f1">MAP</h2>
+    <div id="map-container" class="z-depth-1-half map-container" style="height: 500px">
+  <iframe src="https://www.google.com/maps/d/embed?mid=1mur3OBbdG2VL-UPGOTV-j2vO6JE" width="540" height="480">
+    </iframe>
+</div>
+
+  </div>
+</div>
+
+</body>
+</html>

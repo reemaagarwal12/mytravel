@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> GALLERY </title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <style>
+    body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<body>
+  <script>
+    // Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+  <nav> <b>
+    <a href="contact.html">Contact</a>
+ 
+  <a href="blog.html">Blog</a>
+   <a href="mytravelblog.html">Home</a>
+  <a style="float:left">MY TRAVEL BLOG</a>
+  </b>
+</nav>
+
+<form class="example" action="/action_page.php" style="float:right;max-width:300px">
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+<header>
+  <h2 class="f2"> GALLERY </h2>
+</header>
+
+<div class="gallery">
+  <a target="_blank" href="9.jpg">
+    <img src="9.jpg" alt="Swayambhunath" usemap="#workmap">
+    <map name="workmap">
+      <area shape="default" href="https://en.wikipedia.org/wiki/Swayambhunath" target="_blank">
+  </a>
+  <div class="desc">Swayambhunath in Kathmandu</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="10.jpg">
+    <img src="10.jpg" alt="Pashupatinath" usemap="#workmap1">
+    <map name="workmap1">
+      <area shape="default" href="https://en.wikipedia.org/wiki/Pashupatinath_Temple" target="_blank">
+  </a>
+  <div class="desc">Pashupatinath in Kathmandu</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="11">
+    <img src="11.jpg" alt="Kathmandu Valley" usemap="#workmap2">
+    <map name="workmap2">
+      <area shape="default" href="https://en.wikipedia.org/wiki/Kathmandu_Valley" target="_blank">
+  </a>
+  <div class="desc">Kathmandu Valley in Nepal</div>
+</div>
+
+
+<div class="gallery">
+  <a target="_blank" href="12">
+    <img src="12.jpg" alt="Shanti_Stupa" usemap="#workmap3">
+    <map name="workmap3">
+      <area shape="default" href="https://en.wikipedia.org/wiki/Shanti_Stupa,_Pokhara" target="_blank">
+  </a>
+  <div class="desc">Shanti Stupa in Pokhara</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="13.jpg">
+    <img src="13.jpg" alt="Mountains" usemap="#workmap4">
+    <map name="workmap4">
+      <area shape="default" href="https://en.wikipedia.org/wiki/List_of_mountains_in_Nepal" target="_blank">
+  </a>
+  <div class="desc">Mountains in Himalaya Region</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="14.jpg">
+    <img src="14.jpg" alt="Phewa Lake" usemap="#workmap5">
+    <map name="workmap5">
+      <area shape="default" href="https://en.wikipedia.org/wiki/Phewa_Lake" target="_blank">
+  </a>
+  <div class="desc">Phewa lake in Pokhara</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="15.jpg">
+    <img src="15.jpg" alt="Bhaktapur" usemap="#workmap6">
+    <map name="workmap6">
+      <area shape="default" href="https://en.wikipedia.org/wiki/Bhaktapur_Durbar_Square" target="_blank">
+  </a>
+  <div class="desc">Bhaktapur Durbar Square</div>
+</div>
+<div id="def">
+<iframe src="https://en.wikipedia.org/wiki/Nepal" width="80%" height="350" style="margin-left:140px;border:2px solid black;">
+</iframe>
+</div>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;margin-left:700px">Subscribe</button>
+
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content">
+    <div class="container">
+    
+      <p>Please fill in this form to subscribe.</p>
+     
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="abc@gmail.com" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" minlength="3" maxlength="64" required>
+
+      <label for="phno"><b>Phone Number</b></label>
+      <input type="tel" placeholder="Enter Phone Number" name="phno" pattern="^\d{10}$" required>
+
+      <div class="clearfix">
+        <button type="submit" class="subscr">Submit</button>
+      </div>
+    </div>
+  </form>
+  <script>
+document.getElementById("id01").onsubmit = function() {myFunction1()};
+
+function myFunction1() {
+  alert("You have subscribed successfully");
+}
+</script>
+</div>
+</body>
+</html>
